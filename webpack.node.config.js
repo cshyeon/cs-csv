@@ -31,7 +31,7 @@ const nodeConfig = (env, argv) => {
       }
     },
     devtool: 'inline-source-map',
-    externals: [nodeExternals()],
+    // externals: [nodeExternals()],
     module: {
       rules: [
         {
