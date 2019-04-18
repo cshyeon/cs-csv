@@ -1,5 +1,5 @@
 {
-  "name": "your-npm-package-name",
+  "name": "cs-csv",
   "version": "0.1.0",
   "description": "npm boilerplate with webpack and karma",
   "main": "./dist/Csv.js",
