@@ -19,6 +19,9 @@ const nodeConfig = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: outputFileName + '.js',
+      library: libraryName,
+      libraryExport: 'default',
+      libraryTarget: "umd",
       hotUpdateChunkFilename: 'hot/hot-update.js',
       hotUpdateMainFilename: 'hot/hot-update.json'
     },

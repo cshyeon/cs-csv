@@ -1,7 +1,5 @@
-import Csv from '../lib/Csv.node.js';
-
-Csv.test();
-const csvStr = Csv.objectArrayToCsvString([{ a: 1, b: 2 }, { a: 5, b: 6 }]);
+const Csv = require('../dist/Csv');
+Csv.test()
 // Csv.writeCsv && Csv.writeCsv(csvStr, 'test.csv');
 
 // if (window) { // if detect browser
@@ -34,4 +32,4 @@ const csvStr = Csv.objectArrayToCsvString([{ a: 1, b: 2 }, { a: 5, b: 6 }]);
 //     });
 //   });
 // }
-console.log(csvStr);
+// console.log(csvStr);

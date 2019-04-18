@@ -2,7 +2,7 @@
   "name": "cs-csv",
   "version": "0.1.0",
   "description": "npm boilerplate with webpack and karma",
-  "main": "./dist/Csv.js",
+  "main": "./index.js",
   "browser": {
     "./lib/Csv.node.js": "./lib/Csv.web.js",
     "./dist/Csv.js": "./dist/Csv.browser.js"
