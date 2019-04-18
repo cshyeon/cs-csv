@@ -1,0 +1,56 @@
+{
+  "name": "your-npm-package-name",
+  "version": "0.1.0",
+  "description": "npm boilerplate with webpack and karma",
+  "main": "./dist/Csv.js",
+  "browser": {
+    "./lib/Csv.node.js": "./lib/Csv.web.js",
+    "./dist/Csv.js": "./dist/Csv.browser.js"
+  },
+  "scripts": {
+    "install": "npm run build",
+    "start": "nodemon dist/Csv.js",
+    "dev": "webpack --config ./webpack.node.config.js --watch",
+    "dev:front": "webpack-dev-server --config ./webpack.web.config.js",
+    "build": "webpack --config webpack.prod.config.js --mode production",
+    "test": "karma start ./test/unit/karma.conf.js",
+    "test:node": "karma start ./test/unit/karma.conf.js --target=node"
+  },
+  "keywords": [
+    "npm package",
+    "npm boilerplate"
+  ],
+  "author": "cshyeon",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.14.0",
+    "jasmine": "^3.2.0",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.2",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^3.0.4",
+    "phantomjs-prebuilt": "^2.1.16",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.4",
+    "webpack-dev-server": "^3.3.1"
+  }
+}

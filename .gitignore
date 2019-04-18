@@ -1,0 +1,7 @@
+node_modules
+
+# webpack bundling files
+dist
+
+# lock file
+package-lock.json
